@@ -1,29 +1,14 @@
-# URLShortener
+1. Install Node.js
+2. go to CMD:
+    > cd <your-project name>
+    > npm install
+    > npm run serve
+    > go to http://localhost:8080/
 
-This template should help get you started developing with Vue 3 in Vite.
+3. Install JSON Server
+    go to CMD:
+    > npm install -g json-Server
+4. Start JSON Server while
+    > json-server --watch db.json
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+(You need to CMD windows: one for the node.js server and one for the json-server)
