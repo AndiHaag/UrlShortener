@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <a href="#">Home</a>
-        <a v-on:click="logout" href="#">Logout</a>
+        <a id="logoutBtn" v-on:click="logout" href="#">Logout</a>
     </div>
 </template>
 <script>
@@ -19,7 +19,6 @@ export default{
 
 <style>
 .nav {
-    background-color: #333;
     overflow: hidden;
 }
 

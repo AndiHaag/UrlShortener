@@ -36,13 +36,13 @@ export default {
             console.warn(this.email, this.password)
         }
     },
-    /*mounted()
+    mounted()
     {
         let user= localStorage.getItem('user-info');
         if(user)
         {
             this.$router.push({name:'Home'})
         }
-    }*/
+    }
 }
 </script>

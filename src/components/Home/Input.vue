@@ -4,6 +4,9 @@
         <input type="url" placeholder="Get your URL here">
         <button>Shorten URL</button>
     </div>
+    <div class="output">
+        <p>Textbox for URL</p>
+    </div>
 </template>
 <script>
 export default{
@@ -32,5 +35,14 @@ button {
 .input button:hover{
     background: #ddd;
     color: #333;
+}
+
+.output {
+    margin-top: 25px;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: largerfdff;
+    font-weight: bolder;
+    border: 3px solid skyblue;
 }
 </style>
