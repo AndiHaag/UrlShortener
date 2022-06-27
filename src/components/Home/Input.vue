@@ -13,8 +13,8 @@
     </div>
     <div class="output" v-if="posts == undefined">
         <ul v-if="errors && errors.length">
-            <li v-for="error of errors" :key="error">
-                {{error.message}}
+            <li v-for="errors of errors">
+                {{errors.response.data.error}}
             </li>
         </ul>
     </div>
@@ -34,7 +34,7 @@
 
         methods: {
             shorten_url: function (event) {
-                console.log("1")
+                this.output = ""
                 this.apicall()
             },
 
@@ -43,9 +43,11 @@
                 axios.get(urlstring).then(response => {
                     this.posts = response.data
                 }).catch(e => {
+                    this.posts = undefined
                     this.errors.push(e)
+                    e.clear
                 })
-            }
+            },
         }
     }
 
