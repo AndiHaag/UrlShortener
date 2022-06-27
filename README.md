@@ -11,4 +11,4 @@
 4. Start JSON Server while
     > json-server --watch db.json
 
-(You need to CMD windows: one for the node.js server and one for the json-server)
+(You need two CMD windows: one for the node.js server and one for the json-server)
